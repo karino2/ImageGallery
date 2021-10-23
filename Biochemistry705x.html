@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    Hello Custom Theme!
+    Hello Custom Theme2!
     
     <div id="container">
     
@@ -337,10 +337,12 @@
     <!-- LightGallery -->
     <script src="public/lightgallery/js/lightgallery-all.min.js"></script>
     <script src="public/lightgallery/js/lg-exif.min.js"></script>
+    <script src="public/lightgallery/js/lg-hash.min.js"></script>
 
     <script>
       $(document).ready(function() {
         $("#media").lightGallery({
+          plugins: [lgHash],
           thumbWidth: 80,
           controls: true,
           loop : false,
