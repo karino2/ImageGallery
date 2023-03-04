@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>karino2&#x27;s Image Gallery - MolecularBiology728x3</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+    
+    <div id="container">
+    
+      <!--
+        Gallery title
+      -->
+      <header>
+        <h1><a href="index.html">karino2&#x27;s Image Gallery</a></h1>
+      </header>
+    
+      <!--
+        Breadcrumbs of parent albums
+      -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="MolecularBiology728x3.html">MolecularBiology728x3</a>
+      </nav>
+    
+      <!--
+        Nested albums, if any
+      -->
+      <div id="albums">
+      </div>
+    
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix">
+          
+            <li data-src="media/large/MolecularBiology728x3/0000.png"
+                data-sub-html=""
+                data-download-url="media/original/MolecularBiology728x3/0000.png"
+                
+                data-filename="0000.png"
+          
+              >
+              <a href="media/original/MolecularBiology728x3/0000.png">
+                <img src="media/thumbs/MolecularBiology728x3/0000.png"
+                     width="120"
+                     height="120"
+                     alt="0000.png" />
+              </a>
+            </li>  </ul>
+    
+      <!--
+        Pagination
+      -->
+    
+      <!--
+        Zip file link
+      -->
+    
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <p>Image gallery for karino2's blog.</p>
+      </footer>
+    
+    </div>
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery-all.min.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+    <script src="public/lightgallery/js/lg-hash.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true,
+          fullScreen: true,
+          closable: false,
+          closeOnTap: false,
+          thumbnail: false,
+          hideBarsDelay: 500,
+          zoom: true          
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>
