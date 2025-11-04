@@ -1,0 +1,12 @@
+#!/usr/bin/env oil
+
+const NOTES = ["MolecularBiology728x3"]
+const SRC = "$1/PngNote"
+
+const DEST = "../gallery/"
+
+for NOTE in @NOTES {
+  cp ${SRC}/${NOTE}/*.png $DEST/$NOTE
+}
+
+rm $DEST/$[NOTES[0]]/background.png
